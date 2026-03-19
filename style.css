@@ -19,3 +19,35 @@ body {
 h2 {
     text-align: center;
     color
+#lista-clientes {
+    margin-top: 30px;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+#lista-clientes h3 {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.cliente-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border-left: 4px solid #28a745; /* Uma bordinha verde de sucesso */
+    animation: fadeIn 0.5s ease;
+}
+
+.cliente-card p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Efeitinho de aparecer suavemente */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
